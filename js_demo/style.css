@@ -13,6 +13,8 @@
     background-color: #ddd;
     width: 100%;
     height: 60px;
+    position: sticky;
+    top: 0;
 }
 
 #navbar #navbar-header {
@@ -27,6 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 0.5;
 }
 
 #popup-menu {
@@ -38,9 +41,8 @@
     font-size: 15px;
     background-color: #007BFF;
     color: #fff;
-    transition: 0.5s;
+    transition: 2s;
     border-radius: 10px;
-
 }
 
 #popup-menu:hover {
@@ -57,23 +59,27 @@
     border: 3px solid #007BFF;
     border-radius: 20px;
     margin-top: 50px;
-    transition: 0.5s;
-    translate: 50px;
+    transition: 2s;
+    opacity: 0;
     background-color: #ddd;
-    display: none;
-}
 
-#popup-page #popup-container {
+}
+#popup-container {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+
 }
 
 #popup-container .form-group {
-    margin: 10px auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #popup-container .form-group input {
@@ -84,8 +90,14 @@
     margin: 5px;
     background-color: #007bff4b;
     color: #ddd;
-    border: none;
+    border:none;
     border-radius: 10px;
+}
+#popup-container .form-group input:hover {
+    border-bottom: 3px solid rgb(94, 94, 94);
+}
+#popup-container .form-group input:focus{
+    border: none;
 }
 
 ::-webkit-input-placeholder {
@@ -95,7 +107,21 @@
 }
 
 
-#login {
+.login {
+    box-sizing: border-box;
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    margin: 0 auto;
+    font-size: 15px;
+    background-color: #007BFF;
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 10px;
+    display: block;
+
+}
+.signin {
     box-sizing: border-box;
     width: 150px;
     height: 40px;
@@ -110,7 +136,7 @@
 
 }
 
-#login:hover {
+.login:hover{
     background-color: #fff;
     height: 35px;
     color: #007BFF;
@@ -118,7 +144,21 @@
     border-radius: 5px;
     cursor: pointer;
 }
-
+.signin:hover {
+    background-color: #fff;
+    height: 35px;
+    color: #007BFF;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btns{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    justify-content: center;
+    margin: 5px 10px !important;
+}
 #close {
     float: right;
     background-color: #fff;
@@ -128,7 +168,7 @@
     text-align: center;
     border:1px solid #007BFF;
     border-radius: 50%;
-    transition: 0.5s;
+    transition: 2s;
     position:relative;
     top: -20px;
     right:-20px;
