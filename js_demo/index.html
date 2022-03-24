@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src='script.js'></script>
 </head>
+
 <body>
-    
+    <nav id="navbar">
+        <div id="navbar-header">
+            <h1>Web Sayfam</h1>
+        </div>
+    </nav>
+    <div class="container">
+        <button id="popup-menu" type="click" onclick="myFunc()">Popup Menu</button>
+        <div id="popup-page">
+            <span id="close"><a href="" onclick="close()">X</a></span>
+            <div id="popup-container">
+                <div id="popup-form"> 
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="Adınız">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" id="pwd" placeholder="Parolanız">
+                        </div>
+                        <div class="form-group">
+                            <button id="login" type="submit" onclick="a()">Giriş Yap</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
+
 </html>

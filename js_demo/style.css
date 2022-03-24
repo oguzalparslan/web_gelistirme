@@ -1,4 +1,143 @@
-*{
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25pxpx;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    width: 100%;
+    height: 60px;
+}
+
+#navbar #navbar-header {
+    display: inline;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup-menu {
+    box-sizing: border-box;
+    box-shadow: 5px 5px 8px #888888;
+    width: 120px;
+    height: 50px;
+    padding: 5px;
+    font-size: 15px;
+    background-color: #007BFF;
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 10px;
+
+}
+
+#popup-menu:hover {
+    background-color: #fff;
+    color: #007BFF;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#popup-page {
+    width: 50%;
+    height: 50%;
+    border: 3px solid #007BFF;
+    border-radius: 20px;
+    margin-top: 50px;
+    transition: 0.5s;
+    translate: 50px;
+    background-color: #ddd;
+    display: none;
+}
+
+#popup-page #popup-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup-container .form-group {
+    margin: 10px auto;
+}
+
+#popup-container .form-group input {
+    width: 200px;
+    height: 30px;
+    padding: 7px 15px;
+    text-align: left;
+    margin: 5px;
+    background-color: #007bff4b;
+    color: #ddd;
+    border: none;
+    border-radius: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: #fff transparent;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+#login {
+    box-sizing: border-box;
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    margin: 0 auto;
+    font-size: 15px;
+    background-color: #007BFF;
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 10px;
+    display: block;
+
+}
+
+#login:hover {
+    background-color: #fff;
+    height: 35px;
+    color: #007BFF;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close {
+    float: right;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+    border:1px solid #007BFF;
+    border-radius: 50%;
+    transition: 0.5s;
+    position:relative;
+    top: -20px;
+    right:-20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+#close:hover {
+    color: white;
+  background-color:#007BFF;
+  border:2px solid  #fff;
+  border-radius: 50%;
 }
