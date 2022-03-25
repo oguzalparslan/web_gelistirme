@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: Roboto
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+#navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #F5626C;
+}
+
+#navbar #navbar-brand {
+    color: #333;
+    transition: 1s;
+    transition-delay: 0.5s;
+    padding: 10px
+}
+
+#navbar #navbar-brand:hover {
+    border: 1px solid #F5626C;
+    border-radius: 10px;
+    background-color: #333;
+    color: #FFF;
+
+}
+
+#navbar #navbar-menu {
+    width: 45%;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+#navbar ul li {
+    list-style: none;
+    text-transform: uppercase;
+    padding: 8px;
+    border: none;
+    transition: 1s ;
+    transition-timing-function: ease-in-out(0.165, 0.84, 0.44, 1);
+    box-sizing: border-box;
+}
+
+#navbar ul li:hover {
+    border-bottom: 2px solid #DAD0D0;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.container{
+    width: 90%;
+    height: 100vh;
+    background-color: #DAD0D0;
+    margin: 0 auto;
+    display:flex;
+}
+.col5{
+
+    width:90%;
+    height: 300px;
+    box-sizing: border-box;
+    padding:20px;
+
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Teknik Servis</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="arizal_cihaz_ekle.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="navbar-body">
+            <div class="navbar-header">
+                <h1>Teknik Servis</h1>
+            </div>
+            <div class="navbar-content">
+                <ul>
+                    <li>Ana Sayfa</li>
+                    <li>Ürün Takibi</li>
+                    <li>Arızalı Cihaz Ekle</li>
+                    <li>Yetkili Girişi</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="container">
+        <div class="container-body-ariza">
+            <h3 id="cihaz-kabul-header" lang="tr">cihaz kabul</h3>
+            <form class="form">
+                <input type="text" placeholder="Marka">
+                <input type="text" placeholder="Model">
+                <input type="text" placeholder="Seri No">
+                <input type="text" placeholder="Sahibi">
+                <input type="text" placeholder="Cep Telefonu">
+                <input type="email" placeholder="e-Mail">
+                <input type="date" placeholder="Getirilen Tarih">
+                <textarea cols="30" rows="10" placeholder="Şikayet"></textarea>
+                <div class="btns">
+                    <div class="checkboxes">
+                        <label  for="bilgilendirme">SMS ve e-Mail bilgilendirilmesi 
+                            <input class="cb" type="checkbox" name="bilgilendirme" id="bilgilendirme">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <br>
+                        <label for="teslim-alma">Tüm bileşenleri eksiksiz teslim ettim 
+                            <input class="cb" type="checkbox" id="teslim-alma" name="teslim-alma">
+                            <span class="checkmark"></span>
+                        </label>
+
+                    </div>
+                    <button id="teslim-alma-btn" type="submit">Kaydet</button>
+                </div>
+            </form>
+
+
+        </div>
+    </section>
+</body>
+
+</html>

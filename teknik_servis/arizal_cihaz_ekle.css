@@ -1,0 +1,97 @@
+.container-body-ariza {
+    width: 40%;
+    height: 600px;
+    background-color: #ddd;
+    color: #007BFF;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#cihaz-kabul-header {
+    text-align: start;
+    margin: 0 auto;
+    padding: 10px 5px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.form {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.form input,
+textarea {
+    padding: 5px 10px;
+    margin: 8px;
+}
+
+textarea {
+    resize: none;
+}
+
+.checkboxes {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#teslim-alma-btn {
+    width: 20%;
+    height: 50%;
+    margin: auto auto;
+    padding: 8px 10px;
+}
+
+.form input,
+textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.form input:hover,
+textarea:hover {
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: rgba(221, 221, 221, 0.767);
+    border: 3px solid #fff;
+    color: #000;
+    /* border-bottom:1px solid #ddd; */
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    font-size: medium;
+}
+
+.btns {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+#teslim-alma-btn{
+    border: none;
+    border-radius:5px;
+    padding: 10px;
+    background-color:#007BFF;
+    color:#fff;
+    transition: background-color .8s ease-in-out;
+}
+#teslim-alma-btn:hover{
+    background-color:#fff;
+    color:#007BFF;
+    border: 1px solid #007BFF;
+}
