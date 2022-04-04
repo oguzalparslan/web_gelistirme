@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='script.js'></script>
+</head>
+
+<body>
+
+
+    <div class="hesapmakinesi">
+        <h2 class="header">Hesap Makinesi</h2>
+        <div class="text">
+            <input type="text" class="input" id="textbox1" placeholder="Sayı Girin">
+            <input type="text" class="input" id="textbox2" placeholder="Sayı Girin">
+            <input type="text" class="input" id="textboxresult" placeholder="Sonuc">
+        </div>
+        <div class="dortislem">
+            <input type="button" class="btn add" value="+" onclick="topla()">
+            <input type="button" class="btn sub" value="-" onclick=" cikar()">
+            <input type="button" class="btn mul" value="*" onclick="carp()">
+            <input type="button" class="btn div" value="/" onclick="bol()">
+        </div>
+        <div class="trigonometri">
+            <input type="button" class="btn sin" value="sin" onclick="calculateSinus()">
+            <input type="button" class="btn cos" value="cos" onclick="calculateCosinus()">
+            <input type="button" class="btn tan" value="tan" onclick="calculateTan()">
+            <input type="button" class="btn cot" value="cot" onclick="calculateCot()">
+        </div>
+    </div>
+</body>
+
+</html>
